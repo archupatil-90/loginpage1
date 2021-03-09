@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="INDEX.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main" id ="main">
+
+        <div class="form-container signup-container">
+            <form>
+            <h2>Create Acount</h2>
+            <div class="social-container">
+              <a href="" class="social">
+                <i class="fab fa-facebook-f "></i>
+              </a>  
+              <a href="" class="social">    
+              <i class="fab fa-twitter icon"></i>
+              <a href="" class="social"> 
+                <i class="fab fa-google-plus-g icon"></i> </a>
+            </a> 
+            </div>
+
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="name" >
+                <input type="text"  placeholder="email">
+                <input type="text"  placeholder="password">
+                <!-- <span>Forgot your password</span> -->
+           
+                <button class="btn" >sign up</button>
+            </form>
+            </div>
+
+
+
+        <div class="form-container signin-container">
+            <form>
+            <h2>LOGIN</h2>
+            <div class="social-container">
+                <a href="" class="social">
+                    <i class="fab fa-facebook-f "></i>
+                  </a>  
+                  <a href="" class="social">    
+                  <i class="fab fa-twitter icon"></i>
+                </a> 
+                <a href="" class="social"> 
+                <i class="fab fa-google-plus-g icon"></i> </a>
+            </div>
+
+                <span>or use your account</span>
+                <input type="text" placeholder="name" >
+                
+
+                <input type="text"  placeholder="email">
+                           <span>Forgot your password</span>
+
+           
+                <button class="btn" >sign IN</button>
+            </div>
+
+        </form>
+
+       
+        <div class="right-container">
+            <div class="overlay">
+            <div class="overlay-panel left">
+                <h2 > welcome back </h2>
+                <p>
+                    connect with us sign in with your personal details
+                 </p>
+                 <button class=" btn ghost" id="signin" >sign in</button>
+            </div>
+            <div class="overlay-panel right">
+                <h2 > hello hriend! </h2>
+                <p>
+                    connect with us with your personal details
+                 </p>
+                 <button class=" btn ghost" id="signup" >sign up</button>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+    <script>
+        let main=document.getElementById("main");
+        let signup= document.getElementById("signup");
+        let signin= document.getElementById("signin");
+
+        
+       signup.addEventListener("click", () =>
+        main.classList.add("right-panel-active") );
+
+       signin.addEventListener("click", () =>
+        main.classList.remove("right-panel-active") );
+       
+        </script>
+
+</body>
+
+</html>
